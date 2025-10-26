@@ -27,6 +27,6 @@ nato_phonetic_alphabet=(
   "Zulu"
 )
 
-
-
-echo "${nato_phonetic_alphabet[*]}"
+for word in ${nato_phonetic_alphabet[*]}; do
+    echo $word
+done;
