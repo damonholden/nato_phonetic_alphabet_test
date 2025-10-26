@@ -27,6 +27,8 @@ nato_phonetic_alphabet=(
   "Zulu"
 )
 
-for word in ${nato_phonetic_alphabet[*]}; do
+nato_phonetic_alphabet_shuffled=$(shuf --echo ${nato_phonetic_alphabet[@]})
+
+for word in ${nato_phonetic_alphabet_shuffled[*]}; do
     echo $word
 done;
